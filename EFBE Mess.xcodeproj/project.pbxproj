@@ -14,6 +14,10 @@
 		B45E71111A13118B0082E2FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45E71101A13118B0082E2FB /* Images.xcassets */; };
 		B45E71141A13118B0082E2FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45E71121A13118B0082E2FB /* LaunchScreen.xib */; };
 		B45E71201A13118B0082E2FB /* EFBE_MessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45E711F1A13118B0082E2FB /* EFBE_MessTests.m */; };
+		B4720BBB1A1E309B0033A007 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4720BBA1A1E309B0033A007 /* FacebookSDK.framework */; };
+		B4CFE6621A2A356E00246E97 /* listViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFE6611A2A356E00246E97 /* listViewController.m */; };
+		B4CFE6651A2A358800246E97 /* convoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFE6641A2A358800246E97 /* convoViewController.m */; };
+		B4CFE66B1A2B853500246E97 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CFE66A1A2B853500246E97 /* MyTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		B45E71191A13118B0082E2FB /* EFBE MessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EFBE MessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B45E711E1A13118B0082E2FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B45E711F1A13118B0082E2FB /* EFBE_MessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFBE_MessTests.m; sourceTree = "<group>"; };
+		B4720BBA1A1E309B0033A007 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		B4CFE6601A2A356E00246E97 /* listViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listViewController.h; sourceTree = "<group>"; };
+		B4CFE6611A2A356E00246E97 /* listViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = listViewController.m; sourceTree = "<group>"; };
+		B4CFE6631A2A358800246E97 /* convoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convoViewController.h; sourceTree = "<group>"; };
+		B4CFE6641A2A358800246E97 /* convoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = convoViewController.m; sourceTree = "<group>"; };
+		B4CFE6691A2B853500246E97 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		B4CFE66A1A2B853500246E97 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4720BBB1A1E309B0033A007 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +93,15 @@
 		B45E71021A13118A0082E2FB /* EFBE Mess */ = {
 			isa = PBXGroup;
 			children = (
+				B4720BBA1A1E309B0033A007 /* FacebookSDK.framework */,
 				B45E71071A13118A0082E2FB /* AppDelegate.h */,
 				B45E71081A13118A0082E2FB /* AppDelegate.m */,
+				B4CFE6631A2A358800246E97 /* convoViewController.h */,
+				B4CFE6641A2A358800246E97 /* convoViewController.m */,
+				B4CFE6691A2B853500246E97 /* MyTableViewCell.h */,
+				B4CFE66A1A2B853500246E97 /* MyTableViewCell.m */,
+				B4CFE6601A2A356E00246E97 /* listViewController.h */,
+				B4CFE6611A2A356E00246E97 /* listViewController.m */,
 				B45E710A1A13118A0082E2FB /* ViewController.h */,
 				B45E710B1A13118A0082E2FB /* ViewController.m */,
 				B45E710D1A13118A0082E2FB /* Main.storyboard */,
@@ -219,8 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CFE6651A2A358800246E97 /* convoViewController.m in Sources */,
 				B45E710C1A13118A0082E2FB /* ViewController.m in Sources */,
 				B45E71091A13118A0082E2FB /* AppDelegate.m in Sources */,
+				B4CFE66B1A2B853500246E97 /* MyTableViewCell.m in Sources */,
+				B4CFE6621A2A356E00246E97 /* listViewController.m in Sources */,
 				B45E71061A13118A0082E2FB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ratthead/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "EFBE Mess/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Ratthead/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = "EFBE Mess/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,6 +398,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					/Users/Ratthead/Documents/FacebookSDK,
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -387,6 +418,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					/Users/Ratthead/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = "EFBE MessTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -414,6 +446,7 @@
 				B45E71251A13118B0082E2FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B45E71261A13118B0082E2FB /* Build configuration list for PBXNativeTarget "EFBE MessTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +455,7 @@
 				B45E71281A13118B0082E2FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
